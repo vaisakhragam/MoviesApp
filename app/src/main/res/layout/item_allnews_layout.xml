@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Individual cards for each movies story -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/story_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView_title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="source" />
+
+        <TextView
+            android:id="@+id/textView_description"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="79dp"
+            android:maxLines="2"
+
+            android:minLines="2"
+            android:textColor="@color/light_slate_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_url"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/imageView_url"
+            app:layout_constraintTop_toBottomOf="@+id/textView_title"
+            tools:text="description" />
+
+        <TextView
+            android:id="@+id/textView_author"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/purple"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_description"
+            tools:text="author" />
+
+        <TextView
+            android:id="@+id/textView_publishedAt"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_author"
+            tools:text="publishedAt" />
+        <ImageView
+            android:id="@+id/imageView_url"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="7dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/textView_title"
+app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/textView_url"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+           android:autoLink="web"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_publishedAt"
+            tools:text="https://wwww.google.com" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
