@@ -16,9 +16,11 @@ This app uses [The Movie Database](https://www.themoviedb.org/documentation/api)
 ## Techs
 
 
-* [MVVM]
-* [Kotlin]
-* [Retrofit]
-* [Coroutine]
-* [Room]
-* [Dagger Hilt]
+* MVVM
+* Kotlin
+* Retrofit
+* Coroutine
+* LiveData
+* Room
+* Dagger Hilt
+
